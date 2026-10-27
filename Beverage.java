@@ -1,4 +1,4 @@
-public class Beverage{
+ublic class Beverage{
 /*
 *Set instance variables for the super class
 */
@@ -11,6 +11,10 @@ public class Beverage{
   this(true, 5.0, 8);
   }
 
+/*
+*create parmeters
+*used to collect the users input
+*/
   public Beverage(boolean isCold, double price, int sizeInOz) {
 this.isCold = isCold;
 this.price = price;
@@ -42,4 +46,4 @@ public void setSizeInOz(int sizeInOz) {
  public String toString() {
     return isCold + "." + price;
  }
-} 
+}
