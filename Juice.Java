@@ -2,6 +2,10 @@ public class Juice extends Coffee {
 
     private String flavor;
 
+    /*
+*create parmeters
+*used to collect the users input
+*/
     public Juice() {
      super(false, 7.0, 8, false);
         this.flavor = "Orange";
