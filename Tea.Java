@@ -2,6 +2,11 @@ public class Tea extends Juice {
 
     private boolean isHot;
 
+
+    /*
+*create parmeters
+*used to collect the users input
+*/
     public Tea() {
         super(false, 4.0, 8, false, "none");
         this.isHot = true;
