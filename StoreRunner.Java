@@ -11,10 +11,7 @@ public class StoreRunner {
  Scanner input = new Scanner(System.in);
 
 
-/* 
-* Asks for the user's specific beverage type
-* options include the following things in the parentheses
-*/
+  // Asks for the user's specific beverage type options include the following things in the parentheses 
  System.out.println("Enter beverage type (Beverage, Coffee, Juice, Tea):");
  String type = input.nextLine();
 
@@ -28,11 +25,9 @@ public class StoreRunner {
  int sizeInOz = input.nextInt();
 
 
-/*
-* user input
-*related to the beverage class
-*print output
-*/
+
+//user input related to the beverage class print output
+    
  if (type.equalsIgnoreCase("Beverage")) {
 
    Beverage beverage = new Beverage(isCold, price, sizeInOz);
@@ -40,16 +35,11 @@ public class StoreRunner {
    System.out.println();
    System.out.println("Here's your Beverage!");
    System.out.println(beverage);
-   System.out.println("Cold: " + beverage.getIsCold());
-   System.out.println("Price: " + beverage.getprice());
-   System.out.println("Size: " + beverage.getSizeInOz() + " oz");
  }
 
-/*
-* user input
-*related to the coffee class
-*print output
-*/
+    
+//user input related to the beverage class print output
+    
  if (type.equalsIgnoreCase("Coffee")) {
 
    System.out.println("Has creamer?");
@@ -59,18 +49,13 @@ public class StoreRunner {
 
    System.out.println();
    System.out.println("Here's your Coffee!");
-   System.out.println("Cold: " + coffee.getIsCold());
-   System.out.println("Price: " + coffee.getprice());
-   System.out.println("Size: " + coffee.getSizeInOz() + " oz");
-   System.out.println("Has creamer: " + coffee.getHasCreamer());
+   System.out.println(coffee);
+
 
  }
 
-/*
-* user input
-*related to the juice class]
-*prints out based on input
-*/
+//user input related to the beverage class print output
+    
  if (type.equalsIgnoreCase("Juice")) {
 
    System.out.println("Has creamer?");
@@ -86,19 +71,13 @@ public class StoreRunner {
 
    System.out.println();
    System.out.println("Here's your Juice!");
-   System.out.println("Cold: " + juice.getIsCold());
-   System.out.println("Price: " + juice.getprice());
-   System.out.println("Size: " + juice.getSizeInOz() + " oz");
-   System.out.println("Has creamer: " + juice.getHasCreamer());
-   System.out.println("Flavor: " + juice.getFlavor());
+   System.out.println(juice);
+
 
  }
 
-    /*
-* user input
-*related to the tea class
-*print output
-*/
+ //user input related to the beverage class print output
+    
  if (type.equalsIgnoreCase("Tea")) {
 
    System.out.println("Is it hot?");
@@ -117,19 +96,13 @@ public class StoreRunner {
 
    System.out.println();
    System.out.println("Here's your Tea!");
-   System.out.println("Cold: " + tea.getIsCold());
-   System.out.println("Price: " + tea.getprice());
-   System.out.println("Size: " + tea.getSizeInOz() + " oz");
-   System.out.println("Is hot: " + tea.getIsHot());
-   System.out.println("Has creamer: " + tea.getHasCreamer());
-   System.out.println("Flavor: " + tea.getFlavor());
+   System.out.println(tea);
+    
 
  }
 
-/*
-*close the scanner class
-*print nice message to console
-*/
+//close the scanner class print nice message to console
+    
   System.out.println();
     System.out.println("Thanks for visiting! :D");
 
